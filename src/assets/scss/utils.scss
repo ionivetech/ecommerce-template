@@ -1,0 +1,50 @@
+// Container
+.container {
+  max-width: 1180px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Flex
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-row {
+  flex-direction: row;
+}
+.items-end {
+  align-items: flex-end;
+}
+.items-center {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+
+// Display
+$display: none, flex, block;
+$size: ('sm': $small, 'md': $medium, 'lg': $large);
+
+@each $d in $display {
+  .d-#{$d} {
+    display: #{$d};
+  }
+  @each $s, $sv in $size {
+    .d-#{$s}-#{$d} {
+      @media screen and (min-width: #{$sv}) {
+        display: #{$d};
+      }
+    }
+  }
+}
+
+// background Color
+.bg-white {
+  background-color: white !important;
+}

@@ -1,0 +1,44 @@
+// Fonts
+@import 'fonts.scss';
+// Global class
+@import 'globals.scss';
+// Utility
+@import 'utils.scss';
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  font-family: 'Gilroy', sans-serif;
+}
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+section {
+  margin-top: 40px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
