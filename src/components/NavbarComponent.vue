@@ -170,6 +170,8 @@ onMounted(() => {
   width: 280px;
   max-width: 280px;
   margin-right: 14px;
+  border: 1px solid #dddddd;
+  border-radius: 9999px;
 
   input {
     box-sizing: border-box;
